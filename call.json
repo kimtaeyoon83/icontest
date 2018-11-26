@@ -1,0 +1,13 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_call",
+    "params": {
+        "from": "hxe7af5fcfd8dfc67530a01a0e403882687528dfcb",
+        "to": "cx3acd21ef058f660e2924a22941b0ae1a8ad4c1e5",
+        "dataType": "call",
+        "data": {
+            "method": "total_joiner_count"
+        }
+    },
+    "id": 1
+}

@@ -1,0 +1,61 @@
+[ERROR|logger.py:360] 2018-11-26 07:43:54,599 > [IconService] 'StandardCrowdSale' object has no attribute 'symbol'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_inner_service.py", line 140, in _query
+    params=converted_request['params'])
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 471, in query
+    ret = self._call(context, method, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 539, in _call
+    ret_val = handler(context, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 583, in _handle_icx_call
+    data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 97, in query
+    return self._call(context, icon_score_address, data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 129, in _call
+    if func_name is not None and is_func_readonly(func_name):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_base.py", line 414, in __is_func_readonly
+    func = getattr(self, func_name)
+AttributeError: 'StandardCrowdSale' object has no attribute 'symbol'
+[ERROR|logger.py:360] 2018-11-26 07:45:35,951 > [IconService] 'StandardCrowdSale' object has no attribute 'safeWithdrawal'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_inner_service.py", line 140, in _query
+    params=converted_request['params'])
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 471, in query
+    ret = self._call(context, method, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 539, in _call
+    ret_val = handler(context, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 583, in _handle_icx_call
+    data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 97, in query
+    return self._call(context, icon_score_address, data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 129, in _call
+    if func_name is not None and is_func_readonly(func_name):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_base.py", line 414, in __is_func_readonly
+    func = getattr(self, func_name)
+AttributeError: 'StandardCrowdSale' object has no attribute 'safeWithdrawal'
+[ERROR|logger.py:360] 2018-11-26 07:46:13,276 > [IconService] put is not allowed (32000)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_inner_service.py", line 140, in _query
+    params=converted_request['params'])
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 471, in query
+    ret = self._call(context, method, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 539, in _call
+    ret_val = handler(context, params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 583, in _handle_icx_call
+    data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 97, in query
+    return self._call(context, icon_score_address, data)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_engine.py", line 136, in _call
+    return external_func(func_name=func_name, arg_params=[], kw_params=converted_params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_base.py", line 397, in __external_call
+    ret = score_func(*arg_params, **kw_params)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_score_base.py", line 245, in __wrapper
+    res = func(calling_obj, *args, **kwargs)
+  File "./.score/013acd21ef058f660e2924a22941b0ae1a8ad4c1e5/0x2c46271bb524385867f6a150dd119e7d3a105425e2406f10251985baeabd325a/standard_crowd_sale.py", line 123, in safe_withdrawal
+    self._balances[self.msg.sender] = 0
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_container_db.py", line 188, in __setitem__
+    self._db.put(encoded_key, encoded_value)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/database/db.py", line 348, in put
+    self._context_db.put(self._context, hashed_key, value)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/database/db.py", line 258, in put
+    raise DatabaseException('put is not allowed')
+iconservice.base.exception.DatabaseException: put is not allowed (32000)

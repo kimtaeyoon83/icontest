@@ -1,0 +1,16 @@
+{
+    "uri": "http://127.0.0.1:9000/api/v3",
+    "nid": "0x3",
+    "keyStore": null,
+    "from": "hxe7af5fcfd8dfc67530a01a0e403882687528dfcb",
+    "to": "cx8f7ab909eb72d38b2bc443f8e9af6b30c73b4df2",
+    "deploy": {
+        "stepLimit": "0x3000000",
+        "mode": "update",
+        "scoreParams": {}
+    },
+    "txresult": {},
+    "transfer": {
+        "stepLimit": "0xf4240"
+    }
+}
